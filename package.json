@@ -13,8 +13,10 @@
     "node",
     "nodejs",
     "querystring",
+    "query-string",
     "stringify",
-    "object"
+    "object",
+    "url"
   ],
   "repository": "deltazero-cz/node-object-string-query",
   "devDependencies": {

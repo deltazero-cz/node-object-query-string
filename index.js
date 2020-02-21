@@ -32,7 +32,7 @@ const buildQuery = (input, prefix, opts) => {
             arr.push(_(input.toString()));
             break;
     }
-    return arr.join(opts.separator);
+    return arr.filter(r => !!r).join(opts.separator);
 };
 exports.queryString = (object, options) => {
     if (["object", "string", "number", "bigint"].indexOf(typeof object) < 0)

@@ -6,6 +6,7 @@ import tests = require("./tests.json");
 for (const item of tests) {
   const [parameters, shouldEqual] = item;
   const value = queryString(parameters);
+
   describe(JSON.stringify(parameters), () => {
     it(value, () => {
       const result = queryString(parameters);

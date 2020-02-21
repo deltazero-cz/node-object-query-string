@@ -1,0 +1,12 @@
+{
+  "name": "node-object-string-query",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "ΔO - David Obdržálek, deltazero.cz",
+  "license": "ISC"
+}

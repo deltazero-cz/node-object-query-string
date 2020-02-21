@@ -1,6 +1,6 @@
 {
   "name": "object-query-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stringify objects as URL Query Strings, a lightweight mock of jQuery.param without any dependencies!",
   "author": "ΔO - David Obdržálek <david@deltazero.cz>",
   "license": "ISC",

@@ -18,7 +18,7 @@ const tests = [
             },
             sort: 'mileage'
         },
-        "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage"
+        "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=mileage"
     ],
     [
         {
@@ -67,7 +67,7 @@ const tests = [
 console.log(`Check if set tests (${tests.length}) pass set expectations`, '\n[ok?]', '\t', '[query]');
 for (const item of tests) {
     const [object, shouldEqual] = item;
-    const value = index_1.default(object);
+    const value = index_1.queryString(object);
     console.log(shouldEqual === value, '\t', value);
 }
 //# sourceMappingURL=example.js.map

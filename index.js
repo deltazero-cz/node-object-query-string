@@ -30,9 +30,10 @@ const buildQuery = (input, prefix, opts) => {
     }
     return arr.join(opts.separator);
 };
-exports.default = (object, options) => {
+exports.queryString = (object, options) => {
     if (["object", "string", "number", "bigint"].indexOf(typeof object) < 0)
         return undefined;
+    // @ts-ignore
     let opts = Object.assign({
         separator: '&',
         encode: encodeURIComponent,

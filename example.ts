@@ -1,4 +1,4 @@
-import queryize from './index';
+import { queryString } from './index';
 
 const tests : Array<Array<any>> = [
   [
@@ -17,7 +17,7 @@ const tests : Array<Array<any>> = [
       },
       sort: 'mileage'
     },
-    "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage"
+    "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=mileage"
   ],
   [
     {
@@ -71,7 +71,7 @@ console.log(
 
 for (const item of tests) {
   const [object, shouldEqual] = item;
-  const value = queryize(object);
+  const value = queryString(object);
 
   console.log(shouldEqual === value, '\t', value);
 }

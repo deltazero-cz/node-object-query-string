@@ -4,14 +4,14 @@ Stringify objects as URL Query Strings.
 
 A lightweight mock of jQuery.param function without any dependencies!
 
-## Example
+### Example
 
 ````javascript
 // TypeScript
-import queryString from "object-query-string";
+import { queryString } from './index';
 
 // Node.js
-const queryString = require("object-query-string");
+const { queryString } = require("./index");
 
 const query = queryString({
     filter: {
@@ -26,7 +26,9 @@ const query = queryString({
 
 returns
 
-``filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage``
+````
+filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage
+````
 
 -----
 

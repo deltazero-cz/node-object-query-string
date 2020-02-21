@@ -1,12 +1,19 @@
 {
-  "name": "node-object-string-query",
+  "name": "node-object-query-string",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stringify objects as URL Query Strings, a lightweight mock of jQuery.param without any dependencies!",
+  "author": "ΔO - David Obdržálek <david@deltazero.cz>",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "example": "node example.js"
   },
-  "keywords": [],
-  "author": "ΔO - David Obdržálek, deltazero.cz",
-  "license": "ISC"
+  "keywords": [
+    "node",
+    "nodejs",
+    "querystring",
+    "stringify",
+    "object"
+  ],
+  "repository": "deltazero-cz/node-object-string-query"
 }

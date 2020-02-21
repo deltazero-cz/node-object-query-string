@@ -1,12 +1,23 @@
 import queryize from './index';
 
-const tests = [
+const tests : Array<Array<any>> = [
   [
     {
-      "key1": "value1",
-      "key2": "value2",
+      "first": "one",
+      "second": "two",
     },
-    "key1=value1&key2=value2"
+    "first=one&second=two"
+  ],
+  [
+    {
+      filter: {
+        brands: ["Audi"],
+        models: ["A4", "A6", "A8"],
+        accidentFree: true
+      },
+      sort: 'mileage'
+    },
+    "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage"
   ],
   [
     {

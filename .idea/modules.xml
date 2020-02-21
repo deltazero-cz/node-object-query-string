@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/node-object-string-query.iml" filepath="$PROJECT_DIR$/.idea/node-object-string-query.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node-object-query-string/.idea/node-object-query-string.iml" filepath="$PROJECT_DIR$/../node-object-query-string/.idea/node-object-query-string.iml" />
     </modules>
   </component>
 </project>

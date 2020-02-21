@@ -4,10 +4,21 @@ const index_1 = require("./index");
 const tests = [
     [
         {
-            "key1": "value1",
-            "key2": "value2",
+            "first": "one",
+            "second": "two",
         },
-        "key1=value1&key2=value2"
+        "first=one&second=two"
+    ],
+    [
+        {
+            filter: {
+                brands: ["Audi"],
+                models: ["A4", "A6", "A8"],
+                accidentFree: true
+            },
+            sort: 'mileage'
+        },
+        "filter[brands][]=Audi&filter[models][]=A4&filter[models][]=A6&filter[models][]=A8&filter[accidentFree]=true&sort=milage"
     ],
     [
         {
@@ -59,4 +70,4 @@ for (const item of tests) {
     const value = index_1.default(object);
     console.log(shouldEqual === value, '\t', value);
 }
-//# sourceMappingURL=test.js.map
+//# sourceMappingURL=example.js.map

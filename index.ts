@@ -40,7 +40,7 @@ const buildQuery = (input : any, prefix : string|null|undefined, opts : Options)
       break;
   }
 
-  return arr.join(opts.separator);
+  return arr.filter(r => !!r).join(opts.separator);
 };
 
 export const queryString = (object : object|string|number|bigint, options ?: object) : string|undefined => {

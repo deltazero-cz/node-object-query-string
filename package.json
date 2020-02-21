@@ -15,8 +15,5 @@
     "stringify",
     "object"
   ],
-  "repository": "deltazero-cz/node-object-string-query",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "repository": "deltazero-cz/node-object-string-query"
 }

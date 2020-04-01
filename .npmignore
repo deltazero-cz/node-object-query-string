@@ -1,5 +1,6 @@
-/*.map
-/**.map
-/*.ts
-/**.ts
-/node_modules/
+*.ts
+!*.d.ts
+tsconfig.json
+test
+.idea
+*.tgz

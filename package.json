@@ -10,7 +10,7 @@
     "example": "node example.js",
     "test": "mocha lib/test",
     "build": "tsc -b",
-    "prepublish": "tsc -b"
+    "prepare": "npm run build"
   },
   "keywords": [
     "node",

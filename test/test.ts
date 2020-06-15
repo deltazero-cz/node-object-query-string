@@ -1,7 +1,8 @@
 import {expect} from 'chai';
 import {queryString} from "../index";
 // @ts-ignore
-import tests = require("./tests.json");
+
+const tests = require(`${process.cwd()}/test/tests.json`);
 
 for (const item of tests) {
   const [parameters, shouldEqual] = item;

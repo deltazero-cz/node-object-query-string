@@ -43,7 +43,7 @@ const buildQuery = (input : any, prefix : string|null|undefined, opts : Options)
   return arr.filter(r => !!r).join(opts.separator);
 };
 
-export const queryString = (object : object|string|number|bigint, options ?: object) : string|undefined => {
+export const queryString = (object : object|string|number|bigint, options ?: Partial<Options>) : string|undefined => {
   if (["object", "string", "number", "bigint"].indexOf(typeof object) < 0)
     return undefined;
 

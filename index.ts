@@ -16,7 +16,7 @@ const buildQuery = (input : any, prefix : string|null|undefined, opts : Options)
 
   switch (typeof input) {
     case "object":
-      for (const i in input) {
+      for (const i in input) if (typeof input[i] !== "function") {
         if (typeof input[i] === "object")
           arr.push(buildQuery(input[i], prefix ? `${prefix}[${i}]` : i, opts));
         else

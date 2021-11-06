@@ -15,6 +15,14 @@ const tests : Array<Array<any>> = [
   ],
   [
     {
+      "first": "one",
+      "second": "two",
+      "third": undefined
+    },
+    "first=one&second=two"
+  ],
+  [
+    {
       "filter": {
         "brands": ["Audi"],
         "models": ["A4", "A6", "A8"],
